@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+            <h3>HOME</h3>
+            <div class="square" id="monitorHome">0</div>
+            <div class="buttons">
+                <button onclick="updateScore('home', 1)">+1</button>
+                <button onclick="updateScore('home', 2)">+2</button>
+                <button onclick="updateScore('home', 3)">+3</button>
+            </div>
+        </div>
+
+        <div id="guest">
+            <h3>GUEST</h3>
+            <div class="square" id="monitorGuest">0</div>
+            <div class="buttons">
+                <button onclick="updateScore('guest', 1)">+1</button>
+                <button onclick="updateScore('guest', 2)">+2</button>
+                <button onclick="updateScore('guest', 3)">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reset-container">
+        <button onclick="resetScores()">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
